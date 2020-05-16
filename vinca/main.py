@@ -82,7 +82,8 @@ def generate_output(pkg_shortname, vinca_conf, distro):
                 "{{ compiler('c') }}",
                 "ninja",
                 "cmake",
-                "catkin_pkg"
+                "catkin_pkg",
+                "python {{ python }}"
             ],
             'host': [],
             'run': []
